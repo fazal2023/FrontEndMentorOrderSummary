@@ -1,0 +1,217 @@
+@charset "UTF-8";
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-family: "Red Hat", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: hsl(223, 23%, 55%);
+  background-color: hsl(225, 100%, 94%);
+  display: grid;
+  place-items: center;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+
+h2 {
+  font-style: 1.75rem;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+.grid-flow {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  gap: var(--gap, 1rem);
+}
+
+.padding-24 {
+  padding: 1.5rem;
+}
+
+.padding-48 {
+  padding: 3rem;
+}
+
+.text-neutral-800 {
+  color: hsl(223, 47%, 23%);
+}
+
+.text-neutral-400 {
+  color: hsl(223, 23%, 55%);
+}
+
+.bg-neutral-100 {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.bg-neutral-200 {
+  background-color: hsl(225, 100%, 98%);
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fw-black {
+  font-weight: 900;
+}
+
+.br-1 {
+  border-radius: 0.5rem;
+}
+
+.br-2 {
+  border-radius: 1rem;
+}
+
+.push-right {
+  margin-left: auto;
+}
+
+a,
+.link {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+aا:hover,
+a:focus,
+.link:hover,
+.link:focus {
+  color: hsl(245, 100%, 94%);
+  text-decoration: none;
+}
+
+.button {
+  cursor: pointer;
+  text-decoration: none;
+  border: 0;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  background: transparent;
+  padding: 1em 2em;
+  transition: all 0.3s ease;
+}
+.button[data-type=primary] {
+  color: hsl(0, 0%, 100%);
+  background: hsl(245, 75%, 52%);
+}
+.button[data-type=primary]:hover, .button[data-type=primary]:focus {
+  background: hsl(245, 100%, 94%);
+}
+.button[data-type=naked] {
+  color: hsl(223, 23%, 55%);
+  padding: 0;
+}
+.button[data-type=naked]:hover, .button[data-type=naked]:focus {
+  color: hsl(223, 47%, 23%);
+}
+
+.card {
+  overflow: hidden;
+  max-width: 450px;
+}/*# sourceMappingURL=style.css.map */
